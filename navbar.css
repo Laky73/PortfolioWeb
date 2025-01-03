@@ -21,7 +21,7 @@ nav div {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    width: 1120px;
+    max-width: 1120px;
     height: 80px;
     margin: auto;
     align-items: center;
@@ -52,4 +52,58 @@ nav div ul li a {
 nav div ul li a:hover {
     color: #d5eafc;
     transition: 0.3s;
+}
+
+nav #hamburger {
+    display: none;
+}
+
+#nav_drop {
+    display: none;
+    width: 160px;
+    background-color: #202020;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 60px;
+    top: 70px;
+    border-radius: 10px;
+    border: 1px solid #404040;
+}
+#nav_drop .item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #E2E2E2;
+    text-decoration: none;
+}
+#nav_drop .item:hover {
+    color: #d5eafc;
+    transition: 0.3s;
+}
+#nav_drop .devider {
+    width: 130px;
+    height: 1px;
+    background-color: #2C2C2C;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1120px) {
+    nav div {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav #hamburger {
+        display: flex;
+        color: white;
+        font-size: 25px;
+    }
+    nav div ul {
+        display: none;
+    }
 }
