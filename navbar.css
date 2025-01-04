@@ -55,11 +55,20 @@ nav div ul li a:hover {
 }
 
 nav #hamburger {
+    height: 25px;
     display: none;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav #hamburger:hover {
+    scale: 1.1;
+    transition: 0.3s;
 }
 
 #nav_drop {
     display: none;
+    z-index: 1;
     width: 160px;
     background-color: #202020;
     flex-flow: column nowrap;
@@ -100,8 +109,6 @@ nav #hamburger {
 @media only screen and (max-width: 800px) {
     nav #hamburger {
         display: flex;
-        color: white;
-        font-size: 25px;
     }
     nav div ul {
         display: none;
