@@ -57,3 +57,114 @@ p {
 #unreal_engine {
     color: #BEBEBE;
 }
+
+
+.reference_content {
+    width: 1140px;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.reference_content .arrow {
+    min-width: 30px;
+    min-height: 30px;
+    border-radius: 100%;
+    border: 1px solid #4D5054;
+    font-size: 20px;
+    color: #A4B6CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.reference_content .project {
+    width: 1000px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.reference_content .project img {
+    width: 450px;
+    height: 250px;
+}
+.project_description {
+    max-width: 450px;
+    height: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: left;
+    justify-content: center;
+}
+.project_description h3 {
+    color: white;
+    font-family: "Roboto";
+    font-size: 30px;
+    margin: 0;
+}
+.project_description p {
+    color: #D3D3D3;
+    font-family: "Roboto";
+    font-size: 18px;
+    width: 450px;
+    margin-bottom: 25px;
+}
+.project_description .languages {
+    width: 450px;
+    height: 22px;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+    font-size: 14px;
+    font-family: "Open Sans";
+    font-weight: bolder;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.project_description .lang {
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    border: solid 1px;
+}
+.project_description .visit {
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #758AA5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 470;
+    color: #ADC8EA;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+#reference .dots {
+    margin-bottom: 200px;
+    margin-top: 30px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#reference .dots div {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: #43474B;
+    cursor: pointer;
+}
+#reference .dots .selected {
+    background-color: #A0BFE2;
+}

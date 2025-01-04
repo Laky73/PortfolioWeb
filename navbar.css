@@ -74,7 +74,7 @@ nav #hamburger:hover {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    position: absolute;
     right: 60px;
     top: 70px;
     border-radius: 10px;
