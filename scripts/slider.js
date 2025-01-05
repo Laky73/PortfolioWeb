@@ -53,7 +53,6 @@ function loadJSON(category) {
         let dot = document.createElement("div");
         ((currentIndex) => {
             dot.addEventListener("click", () => {
-                console.log(currentIndex.toString());
                 scroll(currentIndex); 
             });
         })(index);
@@ -108,7 +107,6 @@ function loadJSON(category) {
             description.appendChild(a)
         }
         projectCount++
-        console.log(index)
         index = index + 1
     }
 
