@@ -1,0 +1,52 @@
+{
+    "projects": [
+        {
+            "title": "Example Project 1",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s Lorem Ipsum is simply dummy",
+            "tags": [
+                {
+                    "name": "HTML",
+                    "color": "#EA9090"
+                },
+                {
+                    "name": "CSS",
+                    "color": "#90AAEA"
+                },
+                {
+                    "name": "JavaScript",
+                    "color": "#EAE290"
+                }
+            ],
+            "img": "images/example_img.png",
+            "web_url": "https://laky.atomicnetwork.eu"
+        },
+        {
+            "title": "Example Project 2",
+            "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since",
+            "tags": [
+                {
+                    "name": "HTML",
+                    "color": "#EA9090"
+                },
+                {
+                    "name": "CSS",
+                    "color": "#90AAEA"
+                }
+            ],
+            "img": "images/example_img.png",
+            "web_url": ""
+        },
+        {
+            "title": "Example Project 3",
+            "description": "Lorem Ipsum is simply dummy text of the",
+            "tags": [
+                {
+                    "name": "HTML",
+                    "color": "#EA9090"
+                }
+            ],
+            "img": "images/example_img.png",
+            "web_url": ""
+        }
+    ]
+}

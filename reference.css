@@ -81,12 +81,23 @@ p {
     cursor: pointer;
 }
 
-.reference_content .project {
+.reference_content .projects {
     width: 1000px;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
+}
+.reference_content .slider {
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    display: flex;
+}
+.reference_content .project {
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-between;
 }
 .reference_content .project img {
     width: 450px;
@@ -167,4 +178,5 @@ p {
 }
 #reference .dots .selected {
     background-color: #A0BFE2;
+    transition: 0.4s;
 }
