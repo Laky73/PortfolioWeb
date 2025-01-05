@@ -13,7 +13,7 @@ function scroll(newIndex) {
     if (json.projects.length <= newIndex) {
         newIndex = 0
     }
-    if (newIndex < 0) newIndex = json.projects.length
+    if (newIndex < 0) newIndex = json.projects.length - 1
     currentProject = newIndex
 
     projects.style.transform = "translateX(-"+ currentProject * 1000 +"px)";
@@ -52,6 +52,18 @@ function loadJSON() {
         h.innerHTML = obj.title
         description.appendChild(h)
 
+        let tags = document.createElement("div")
+        tags.className = "languages"
+        description.appendChild(tags)
+        for (let j in obj.tags) {
+            let tag = obj.tags[j]
+            let t = document.createElement("div")
+            t.className = "lang"
+            t.innerHTML = tag.name
+            t.style.color = tag.color
+            tags.appendChild(t)
+        }
+
         let p = document.createElement("p")
         p.innerHTML = obj.description
         description.appendChild(p)
@@ -64,18 +76,9 @@ function loadJSON() {
             icon.classList = ["fa-solid", "fa-arrow-up-from-bracket"]
             a.appendChild(icon)
             a.innerHTML = "Visit Website"
-        }
-
-        let tags = document.createElement("div")
-        tags.className = "languages"
-        description.appendChild(tags)
-        for (let j in obj.tags) {
-            let tag = obj.tags[j]
-            let t = document.createElement("div")
-            t.className = "lang"
-            t.innerHTML = tag.name
-            t.style.color = tag.color
-            tags.appendChild(t)
+            description.appendChild(a)
         }
     }
+
+    return json
 }

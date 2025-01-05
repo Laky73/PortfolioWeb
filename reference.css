@@ -86,7 +86,6 @@ p {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    align-items: center;
     overflow: hidden;
 }
 .reference_content .slider {
@@ -109,7 +108,7 @@ p {
     display: flex;
     flex-flow: column nowrap;
     text-align: left;
-    justify-content: center;
+    justify-content: start;
 }
 .project_description h3 {
     color: white;
