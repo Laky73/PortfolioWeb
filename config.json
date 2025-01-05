@@ -17,8 +17,9 @@
                     "color": "#EAE290"
                 }
             ],
-            "img": "images/example_img.png",
-            "web_url": "https://laky.atomicnetwork.eu"
+            "img": "/images/example_img.png",
+            "web_url": "https://laky.atomicnetwork.eu",
+            "category": "Web development"
         },
         {
             "title": "Example Project 2",
@@ -33,8 +34,9 @@
                     "color": "#90AAEA"
                 }
             ],
-            "img": "images/example_img.png",
-            "web_url": ""
+            "img": "/images/example_img.png",
+            "web_url": "",
+            "category": "Unreal engine"
         },
         {
             "title": "Example Project 3",
@@ -45,8 +47,25 @@
                     "color": "#EA9090"
                 }
             ],
-            "img": "images/example_img.png",
-            "web_url": ""
+            "img": "/images/example_img.png",
+            "web_url": "",
+            "category": "Web development"
+        }
+    ],
+    "categories": [
+        {
+            "name": "All projects",
+            "color": "#EEB3B3"
+        },
+        {
+            "name": "Web development",
+            "color": "#F1C49C",
+            "icon": ["fa-solid", "fa-code"]
+        }, 
+        {
+            "name": "Unreal engine",
+            "color": "#BEBEBE",
+            "img": "images/ue_icon.svg"
         }
     ]
 }

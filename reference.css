@@ -42,20 +42,19 @@ p {
     display: flex;
     gap: 10px;
     align-items: center;
+    cursor: pointer;
 }
 .categories div img {
     width: 20px;
     height: 20px;
 }
-
-#all_projects {
-    color: #EEB3B3;
+.categories .selected {
+    font-weight: bold;
+    text-decoration: underline;
 }
-#web_development {
-    color: #F1C49C;
-}
-#unreal_engine {
-    color: #BEBEBE;
+.categories div:hover {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
@@ -94,8 +93,9 @@ p {
     display: flex;
 }
 .reference_content .project {
-    min-width: 1000px;
+    width: 1000px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 .reference_content .project img {
@@ -156,6 +156,7 @@ p {
     color: #ADC8EA;
     gap: 10px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 
@@ -178,4 +179,29 @@ p {
 #reference .dots .selected {
     background-color: #A0BFE2;
     transition: 0.4s;
+}
+
+
+@media only screen and (max-width: 1140px) {
+    .reference_content { 
+        width: max-content;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .reference_content .projects {
+        max-width: 450px;
+    }
+    .reference_content .project {
+        flex-flow: column;
+        gap: 20px;
+        max-width: 450px;   
+    }
+    .reference_content .project_description {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .reference_content .languages {
+        justify-content: center;
+    }
 }
