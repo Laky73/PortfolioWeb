@@ -42,3 +42,10 @@ footer {
     color: #AFAFAF;
     background-color: #1B1B1B;
 }
+
+@media only screen and (max-width: 800px) {
+    #contact .content {
+        flex-flow: column;
+        gap: 30px;
+    }
+}

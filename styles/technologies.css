@@ -24,14 +24,15 @@
 
 #technologies .row {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 800px;
+    width: 800px;   
 }
 
 #technologies .item {
     display: flex;
-    gap: 15px;
+    gap: 15px 15px;
     width: 350px;
     height: 80px;
     background-color: #202020;
@@ -69,4 +70,12 @@
 #technologies .item .name img {
     width: 50px;
     height: 50px;
+}
+
+@media only screen and (max-width: 800px) {
+    #technologies .row {
+        width: fit-content;
+        flex-flow: column;
+        gap: 20px;
+    }
 }
