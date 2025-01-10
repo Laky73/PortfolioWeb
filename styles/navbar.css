@@ -4,12 +4,15 @@
 
 html {
     scroll-behavior: smooth;
-    
+    overflow-x: hidden;
 }
 
 body {
     margin: 0;
+    padding: 0;
     background-color: #202020;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 nav {
