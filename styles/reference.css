@@ -205,3 +205,35 @@ p {
         justify-content: center;
     }
 }
+
+@media only screen and (max-width: 670px) {
+    .reference_content {
+        max-width: 400px;
+        gap: 0;
+    }
+    .reference .arrow .left {
+        position: absolute;
+        left: 0;
+    }
+    .reference .arrow .right {
+        position: absolute;
+        right: 0;
+    }
+    .reference_content .project {
+        max-width: 330px;
+    }
+    .reference_content .project img {
+        max-width: 330px;
+        max-height: 200px;
+    }
+    .reference_content .projects {
+        max-width: 330px;
+
+    }
+    .project_description {
+        max-width: 330px;
+    }
+    .project_description p {
+        max-width: 330px;
+    }
+}

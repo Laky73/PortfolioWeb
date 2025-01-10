@@ -18,7 +18,8 @@ function scroll(newIndex) {
     if (newIndex < 0) newIndex = projectCount - 1
     currentProject = newIndex
 
-    if (window.matchMedia("(max-width: 1000px)").matches) projects.style.transform = "translateX(-"+ currentProject * 450 +"px)"
+    if (window.matchMedia("(max-width: 670px)").matches) projects.style.transform = "translateX(-"+ currentProject * 330 +"px)"
+    else if (window.matchMedia("(max-width: 1140px)").matches) projects.style.transform = "translateX(-"+ currentProject * 450 +"px)"
     else projects.style.transform = "translateX(-"+ currentProject * 1000 +"px)"
 
     for (let child of document.getElementById("dots").children) {
