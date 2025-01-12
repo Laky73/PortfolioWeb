@@ -103,6 +103,38 @@ nav #hamburger:hover {
     margin: auto;
 }
 
+.nav_drop_animation_start {
+    animation: 0.4s anim_start ease-in-out;
+}
+.nav_drop_animation_end {
+    animation: 0.4s anim_end ease-in-out;
+}
+@keyframes anim_start {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes anim_end {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 100%;
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+}
+
+
 @media only screen and (max-width: 1120px) {
     nav div {
         margin-left: 30px;
